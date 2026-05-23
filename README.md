@@ -1,16 +1,99 @@
-# React + Vite
+# StudyFlow - Web Engineering Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StudyFlow is a responsive student task manager web application
 
-Currently, two official plugins are available:
+## Application Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+StudyFlow helps students manage their academic tasks in one simple place. Users can add tasks, choose a subject, set a deadline, select a priority, delete tasks, and send feedback.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+- Node.js
+- Express.js
+- SQLite
 
-## Expanding the ESLint configuration
+## Project Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home Page
+- Tasks Page
+- Contact / Feedback Page
+
+## Main Features
+
+- Responsive user interface
+- Consistent navigation
+- Add study tasks
+- View saved tasks
+- Delete tasks
+- Submit feedback
+- Frontend form validation
+- Backend validation
+- SQLite database integration
+
+## Backend API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | / | Checks that backend is running |
+| GET | /api/tasks | Gets all tasks from database |
+| POST | /api/tasks | Adds a new task |
+| DELETE | /api/tasks/:id | Deletes a task |
+| POST | /api/feedback | Saves feedback message |
+
+## How to Run the Project
+
+### Frontend
+
+From the main project folder:
+
+```bash
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+### Backend
+
+Open a second terminal:
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
+## Database
+
+The project uses SQLite. The database includes two main tables:
+
+- tasks
+- feedback
+
+The database can be viewed using DB Browser for SQLite.
+
+## Notes
+
+- The frontend and backend must both be running at the same time.
+- The frontend runs on port 5173.
+- The backend runs on port 5000.
+- The SQLite database file is created automatically inside the backend folder after running the backend.
+
+## Made By
+
+This project was completed  by Omar Alaa 221002802 A Bonus would be much appreciated :) 
